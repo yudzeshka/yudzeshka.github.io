@@ -1,100 +1,156 @@
 <!DOCTYPE html>
 <html lang="Ru">
   <head>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>«Автоцентр Garage</title>
-    <link rel="stylesheet" href="./styles/style.css" />
+    <meta
+      name="description"
+      content="A layout example with a side menu that hides on mobile, just like the Pure website."
+    />
+    <title>Автоцентр Garage</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
-    <header>
-      <h1>Автоцентр "Garage"</h1>
-      <nav>
-        <h2 class="h2">Мы предоставляем следующие услуги:</h2>
-        <a href="Tire.html">Шиномонтаж</a>
-        <a href="Oil.html">Замена масла</a>
-        <a href="AirCondit.html">Заправка кондиционеров</a>
-      </nav>
-    </header>
+    <div id="layout">
+      <!-- Menu toggle -->
+      <a href="#menu" id="menuLink" class="menu-link">
+        <span></span>
+      </a>
 
-    <section>
-      <figure>
-        <img class="img" src="HomePage.jpeg" alt="photo_of_Garage_auto" />
-      </figure>
-    </section>
-    <section>
-      <p>
-        Эффективное обслуживание клиентов является главным приоритетом и ключом
-        к нашему успеху. С того момента, как вы зайдете в Автоцентр «Garage», вы
-        заметите, что мы не обычная автомастерская.
-      </p>
-      <p>
-        Чистый зал ожидания, свежий кофе и комфортная комната клиента — вот лишь
-        некоторые из плюсов, которыми мы можем Вас удивить.
-      </p>
-      <h2>Почему мы?</h2>
-      <ul>
-        <li>
-          <span class="colortext">Доверие:</span> когда дело доходит до ремонта
-          автомобилей, чтобы заработать Ваши лояльность и доверие, мы делаем все
-          возможное каждый день;
-        </li>
-        <li>
-          <span class="colortext">Талант:</span> С Автоцентр «Garage» вы можете
-          отдыхать спокойно, зная, что наши высококвалифицированные и опытные
-          профессионалы обслуживают ваш автомобиль.
-        </li>
-        <li>
-          <span class="colortext">Время:</span> Мы уделяем время столько,
-          сколько нам необходимо, чтобы предоставить Вам высококачественный
-          автосервис в «Автоцентр Garage».
-        </li>
-      </ul>
-      <h2>Наши приемущества:</h2>
-      <ol>
-        <li><span class="colortext">Низкие цены</span></li>
-        <p>
-          Как крупная сеть, автосервисы «Garage» имеют возможность закупать
-          масла и фильтры по самым выгодным ценам, что дает возможность
-          предоставить клиентам наилучшие цены в городе
-        </p>
-        <li><span class="colortext">Качественный сервис.</span></li>
-        <p>
-          В центрах «Garage» работают квалифицированные специалисты с
-          многолетним опытом работы в автосервисах.
-        </p>
-        <li><span class="colortext">Большой выбор продукции.</span></li>
-        <p>
-          В центрах «Garage» Вы сможете найти масла и фильтры для любого типа
-          автомобилей.
-        </p>
-        <li><span class="colortext">Удобно найти/удобно ожидать.</span></li>
-        <p>
-          Центры «Garage» расположены в удобных местах, вблизи больших спальных
-          районов и оживленных магистралей.
-        </p>
-        <li>
-          <span class="colortext">Накопительная дисконтная программа.</span>
-        </li>
-        <p>
-          Во всей сети работает накопительная дисконтная программа, которая
-          позволяет клиентам получать бонусные баллы за каждое обслуживание
-          которые затем можно потратить на товары и услуги.
-        </p>
-        <li>
-          <span class="colortext"
-            >Постоянные акции и рекламные мероприятия</span
-          >
-        </li>
-        <p>
-          Сеть автосервисов «Garage» не перестает радовать клиентов
-          всевозможными акциями и рекламными мероприятиями.
-        </p>
-      </ol>
-    </section>
-    <footer>
+      <div id="menu">
+        <div class="pure-menu">
+          <a class="pure-menu-heading" href="index.html">Главная</a>
+
+          <ul class="pure-menu-list">
+            <li class="pure-menu-item">
+              <a href="Tire.html" class="pure-menu-link">Шиномонтаж</a>
+            </li>
+            <li class="pure-menu-item">
+              <a href="Oil.html" class="pure-menu-link">Замена масла</a>
+            </li>
+
+            <li class="pure-menu-item">
+              <a href="AirCondit.html" class="pure-menu-link"
+                >Заправка кондиционера</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="main">
+        <div class="header">
+          <h1>Автоцентр "Garage"</h1>
+          <h2>Твой лучший автоцентр</h2>
+        </div>
+
+        <div class="content">
+          <h2 class="content-subhead">Почему мы?</h2>
+          <ul>
+            <li>
+              <span>Доверие:</span> когда дело доходит до ремонта автомобилей,
+              чтобы заработать Ваши лояльность и доверие, мы делаем все
+              возможное каждый день;
+            </li>
+            <li>
+              <span>Талант:</span> С Автоцентр «Garage» вы можете отдыхать
+              спокойно, зная, что наши высококвалифицированные и опытные
+              профессионалы обслуживают ваш автомобиль.
+            </li>
+            <li>
+              <span>Время:</span> Мы уделяем время столько, сколько нам
+              необходимо, чтобы предоставить Вам высококачественный автосервис в
+              «Автоцентр Garage».
+            </li>
+          </ul>
+
+          <h2 class="content-subhead">Наши приемущества:</h2>
+          <ol>
+            <li><span>Низкие цены</span></li>
+            <p>
+              Как крупная сеть, автосервисы «Garage» имеют возможность закупать
+              масла и фильтры по самым выгодным ценам, что дает возможность
+              предоставить клиентам наилучшие цены в городе
+            </p>
+            <li><span>Качественный сервис.</span></li>
+            <p>
+              В центрах «Garage» работают квалифицированные специалисты с
+              многолетним опытом работы в автосервисах.
+            </p>
+            <li><span>Большой выбор продукции.</span></li>
+            <p>
+              В центрах «Garage» Вы сможете найти масла и фильтры для любого
+              типа автомобилей.
+            </p>
+            <li><span>Удобно найти/удобно ожидать.</span></li>
+            <p>
+              Центры «Garage» расположены в удобных местах, вблизи больших
+              спальных районов и оживленных магистралей.
+            </p>
+            <li>
+              <span>Накопительная дисконтная программа.</span>
+            </li>
+            <p>
+              Во всей сети работает накопительная дисконтная программа, которая
+              позволяет клиентам получать бонусные баллы за каждое обслуживание
+              которые затем можно потратить на товары и услуги.
+            </p>
+            <li>
+              <span>Постоянные акции и рекламные мероприятия</span>
+            </li>
+            <p>
+              Сеть автосервисов «Garage» не перестает радовать клиентов
+              всевозможными акциями и рекламными мероприятиями.
+            </p>
+          </ol>
+
+          <div class="pure-g">
+            <div class="pure-u-1-4">
+              <img
+                class="pure-img-responsive"
+                src="Images/HomePage.jpeg"
+                alt="photo_of_Garage_auto"
+              />
+            </div>
+            <div class="pure-u-1-4">
+              <img
+                class="pure-img-responsive"
+                src="Images/HomePage2.jpg"
+                alt="photo_of_Garage_auto"
+              />
+            </div>
+            <div class="pure-u-1-4">
+              <img
+                class="pure-img-responsive"
+                src="Images/HomePage3.jpeg"
+                alt="photo_of_Garage_auto"
+              />
+            </div>
+            <div class="pure-u-1-4">
+              <img
+                class="pure-img-responsive"
+                src="Images/HomePage4.jpg"
+                alt="photo_of_Garage_auto"
+              />
+            </div>
+          </div>
+
+          <h2 class="content-subhead">Ждем вас в нашем автоцентре</h2>
+          <p>
+            Эффективное обслуживание клиентов является главным приоритетом и
+            ключом к нашему успеху. С того момента, как вы зайдете в Автоцентр
+            «Garage», вы заметите, что мы не обычная автомастерская.
+          </p>
+          <p>
+            Чистый зал ожидания, свежий кофе и комфортная комната клиента — вот
+            лишь некоторые из плюсов, которыми мы можем Вас удивить.
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
       <address>
         <a href="mailto:garage@gmail.com">Наш email:garage@gmail.com</a><br />
         <a href="tel:+375297771111">Наш телефон: +375 (29) 777-11-11</a><br />
@@ -103,5 +159,7 @@
         Мы работаем без выходных с <time>8:00 - 20:00</time>
       </address>
     </footer>
+
+    <script src="script/ui.js"></script>
   </body>
 </html>

@@ -1,96 +1,115 @@
 <!DOCTYPE html>
 <html lang="Ru">
   <head>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Автоцентр Garage:Шиномонтаж</title>
-    <link rel="stylesheet" href="./styles/style.css" />
+    <meta
+      name="description"
+      content="A layout example with a side menu that hides on mobile, just like the Pure website."
+    />
+    <title>Автоцентр Garage</title>
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
-    <header>
-      <h1>Шиномонтаж</h1>
-      <nav>
-        <a href="index.html">Главная</a>
-        <a href="Oil.html">Замена масла</a>
-        <a href="AirCondit.html">Заправка кондиционеров</a>
-      </nav>
-    </header>
+    <div id="layout">
+      <!-- Menu toggle -->
+      <a href="#menu" id="menuLink" class="menu-link">
+        <span></span>
+      </a>
 
-    <section>
-      <figure>
-        <img class="img" src="Tire.jpg" alt="photo of Tire fitting" />
-      </figure>
-    </section>
-    <section>
-      <h2>Шиномонтаж и балансировка колес</h2>
-      <p>
-        Мы рады предложить вам качественный шиномонтаж и балансировку колес всех
-        марок автомобилей. Наши опытные мастера выполняют услуги шиномонтажа c
-        1998 года.
-      </p>
-      <p>
-        Состояние шин и колёсных дисков может характеризовать состояние подвески
-        и рулевого управления. Периодическая перестановка шин по схеме и
-        своевременная балансировка колёс позволит избежать вибраций при движении
-        автомобиля на больших скоростях и продлить срок их эксплуатации.
-        Своевременный шиномонтаж и балансировка колес позволит избежать
-        множество проблем, связанных с управляемостью автомобиля и его
-        поведением в разные поры года.
-      </p>
-      <p>
-        Шиномонтаж и балансировка колес позволит обнаружить все дефекты шин, в
-        том числе и, так называемые, «пятна», появление которых обусловлено
-        несвоевременной балансировкой, а также «шишки» — результат воздействия
-        сильных ударов и острых краев ям и бордюров, при переезде неровностей.
-      </p>
-      <p>Всё это влияет на безопасность и комфортное управление автомобилем.</p>
-      <p>
-        Запишитесь на шиномонтаж у нас и получите высококлассный сервис и
-        быстрое обслуживание.
-      </p>
-      <table border="1px" width="30%">
-        <caption>
-          Стоимость предоставляемых услуг
-        </caption>
-        <thead>
-          <th>Наименование услуги</th>
-          <th>Стоимость</th>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Монтаж-демонтаж шины</td>
-            <td>2 рубля</td>
-          </tr>
-          <tr>
-            <td>Снятие-установка колеса</td>
-            <td>2 рубля</td>
-          </tr>
-          <tr>
-            <td>Балансировка</td>
-            <td>2 рубля</td>
-          </tr>
-          <tr>
-            <td>Ремонт шины</td>
-            <td>5-20 рублей</td>
-          </tr>
-          <tr>
-            <td>Замена вентеля одного бескамерного колеса</td>
-            <td>2 рубля</td>
-          </tr>
-          <tr>
-            <td>Снятие, установка запаски из труднодоступных мест</td>
-            <td>5-20 рублей</td>
-          </tr>
-          <tr>
-            <td>Снятие пригоревшего диска с машины</td>
-            <td>5-20 рублей</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-    <footer>
+      <div id="menu">
+        <div class="pure-menu">
+          <a class="pure-menu-heading" href="index.html">Главная</a>
+
+          <ul class="pure-menu-list">
+            <li class="pure-menu-item">
+              <a href="Tire.html" class="pure-menu-link">Шиномонтаж</a>
+            </li>
+            <li class="pure-menu-item">
+              <a href="Oil.html" class="pure-menu-link">Замена масла</a>
+            </li>
+
+            <li class="pure-menu-item">
+              <a href="AirCondit.html" class="pure-menu-link"
+                >Заправка кондиционера</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="main">
+        <div class="header">
+          <h1>Автоцентр "Garage"</h1>
+          <h2>Твой лучший автоцентр</h2>
+        </div>
+
+        <div class="content">
+          <h2 class="content-subhead">Шиномонтаж и балансировка колес</h2>
+          <p>
+            Состояние шин и колёсных дисков может характеризовать состояние
+            подвески и рулевого управления. Периодическая перестановка шин по
+            схеме и своевременная балансировка колёс позволит избежать вибраций
+            при движении автомобиля на больших скоростях и продлить срок их
+            эксплуатации. Своевременный шиномонтаж и балансировка колес позволит
+            избежать множество проблем, связанных с управляемостью автомобиля и
+            его поведением в разные поры года.
+          </p>
+
+          <div class="pure-g">
+            <div class="pure-u-1-4">
+              <img
+                class="pure-img-responsive"
+                src="Images/Tire.jpg"
+                alt="photo_of_tire"
+              />
+            </div>
+          </div>
+
+          <h2 class="content-subhead">
+            Запишитесь на шиномонтаж у нас и получите высококлассный сервис.
+          </h2>
+          <table class="table_blur">
+            <thead>
+              <th>Наименование услуги</th>
+              <th>Стоимость</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Монтаж-демонтаж шины</td>
+                <td>2 рубля</td>
+              </tr>
+              <tr>
+                <td>Снятие-установка колеса</td>
+                <td>2 рубля</td>
+              </tr>
+              <tr>
+                <td>Балансировка</td>
+                <td>2 рубля</td>
+              </tr>
+              <tr>
+                <td>Ремонт шины</td>
+                <td>5-20 рублей</td>
+              </tr>
+              <tr>
+                <td>Замена вентеля одного бескамерного колеса</td>
+                <td>2 рубля</td>
+              </tr>
+              <tr>
+                <td>Снятие, установка запаски из труднодоступных мест</td>
+                <td>5-20 рублей</td>
+              </tr>
+              <tr>
+                <td>Снятие пригоревшего диска с машины</td>
+                <td>5-20 рублей</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
       <address>
         <a href="mailto:garage@gmail.com">Наш email:garage@gmail.com</a><br />
         <a href="tel:+375297771111">Наш телефон: +375 (29) 777-11-11</a><br />
@@ -99,5 +118,7 @@
         Мы работаем без выходных с <time>8:00 - 20:00</time>
       </address>
     </footer>
+
+    <script src="script/ui.js"></script>
   </body>
 </html>
