@@ -1,0 +1,10 @@
+.demo-background-vert {
+  height: 400px;
+  background-image: url(../images/img_vert.png);
+  background-repeat: repeat;
+}
+.demo-background-hor {
+  height: 400px;
+  background-image: url(../images/img_hor.png);
+  background-repeat: repeat;
+}

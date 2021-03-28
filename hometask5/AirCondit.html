@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="Ru">
+  <head>
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A layout example with a side menu that hides on mobile, just like the Pure website."
+    />
+    <title>Автоцентр Garage</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <div id="layout">
+      <!-- Menu toggle -->
+      <a href="#menu" id="menuLink" class="menu-link">
+        <span></span>
+      </a>
+
+      <div id="menu">
+        <div class="pure-menu">
+          <a class="pure-menu-heading" href="index.html">Главная</a>
+
+          <ul class="pure-menu-list">
+            <li class="pure-menu-item">
+              <a href="Tire.html" class="pure-menu-link">Шиномонтаж</a>
+            </li>
+            <li class="pure-menu-item">
+              <a href="Oil.html" class="pure-menu-link">Замена масла</a>
+            </li>
+
+            <li class="pure-menu-item">
+              <a href="AirCondit.html" class="pure-menu-link"
+                >Заправка кондиционера</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="main">
+        <div class="header">
+          <h1>Автоцентр "Garage"</h1>
+          <h2>Твой лучший автоцентр</h2>
+        </div>
+
+        <div class="content">
+          <h2 class="content-subhead">Заправка кондиционера</h2>
+          <p>
+            Автоцентр "Garage" оказывает услуги заправки автокондиционеров в
+            легковых автомобилях и микроавтобусах на современном автоматическом
+            оборудовании. Применение специализированных заправочных станций
+            позволяет свести к минимуму зависимость качества от человеческого
+            фактора и гарантировать эффективную работу системы в течение сезона.
+          </p>
+
+          <div class="pure-g">
+            <div class="pure-u-1-4">
+              <img
+                class="pure-img-responsive"
+                src="Images/Air_cond.jpg"
+                alt="photo_of_air_condition"
+              />
+            </div>
+          </div>
+
+          <h2 class="content-subhead">
+            Почему не стоит заправлять кондиционер своими руками
+          </h2>
+          <p>
+            В условиях гаража и кустарной мастерской, где не используется
+            автоматизированное оборудование, качественная заправка невозможна по
+            ряду причин:
+          </p>
+          <ul>
+            <li>
+              нет возможности проверить герметичность и проконтролировать
+              давление;
+            </li>
+            <li>
+              нарушается процесс объемного и весового подбора фреона под
+              определенную модель кондиционера;
+            </li>
+            <li>отсутствует оборудование для продувки и сушки;</li>
+            <li>нет автоматического контроля процесса заполнения системы.</li>
+          </ul>
+          <p>
+            Оборудование для профессиональной заправки кондиционера — это
+            многофункциональная установка, позволяющие выполнить все требования
+            технологии.
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <address>
+        <a href="mailto:garage@gmail.com">Наш email:garage@gmail.com</a><br />
+        <a href="tel:+375297771111">Наш телефон: +375 (29) 777-11-11</a><br />
+        Город Гродно <br />
+        Улица Гаражная 1/1 <br />
+        Мы работаем без выходных с <time>8:00 - 20:00</time>
+      </address>
+    </footer>
+
+    <script src="script/ui.js"></script>
+  </body>
+</html>
