@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
+.title {
+  background-color: #2196f3;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  text-transform: uppercase;
+}
+
+.header {
+  background-color: grey;
+  color: white;
+}
+
+.section-title {
+  padding-top: 30px;
+  padding-left: 15px;
+  margin-top: 5px;
+}
+
+.footer {
+  background-color: grey;
+  color: white;
+  padding: 15px;
+}
+
+.topmenu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #777;
+  overflow: hidden;
+}
+
+.topmenu li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.topmenu li a:hover {
+  background-color: #222;
+}
+
+.topmenu li a.active {
+  color: white;
+  background-color: #4caf50;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li a {
+  margin-bottom: 4px;
+  display: block;
+  padding: 8px;
+  background-color: #eee;
+  color: #666;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+.menu li a.active {
+  background-color: #008cba;
+  color: white;
+}
+
+.overflow-demo {
+  background-color: #eee;
+  height: 150px;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+/* for demo001.html */
+
+.first-letter-is-big {
+  float: left;
+  width: 0.7em;
+  font-size: 400%;
+  font-family: algerian, "Courier New", Courier, monospace;
+  line-height: 80%;
+}
+
+.first-letter-is-big-css::first-letter {
+  float: left;
+  width: 0.7em;
+  font-size: 400%;
+  font-family: algerian, "Courier New", Courier, monospace;
+  line-height: 80%;
+  padding-right: 10px;
+}
+
+/* *,
+hometask
+ */
+@media only screen and (min-width: 800px) {
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .flex-content,
+  .flex-menu {
+    width: 100%;
+    padding: 15px;
+  }
+  .flex-menu {
+    flex-basis: 25%;
+    flex-grow: 1;
+  }
+  .flex-content {
+    flex-basis: 75%;
+    flex-grow: 3;
+  }
+  .topmenu {
+    display: flex;
+    justify-content: start;
+  }
+}

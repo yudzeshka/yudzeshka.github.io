@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "tag-basics"
+	},
+	{
+		"path": "css-basics"
+	}
+],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "css-basics"
+	}
+}
