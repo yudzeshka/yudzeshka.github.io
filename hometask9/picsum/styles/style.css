@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  letter-spacing: 1.5px;
+}
+.image-right {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  padding: 100px 0;
+}
+.image-left {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  padding: 100px 0;
+  flex-direction: row-reverse;
+}
+.header-img {
+  width: 40px;
+  position: relative;
+  top: 50px;
+  right: 50px;
+}
+.article {
+  width: 30%;
+}
+.article__header > h1 {
+  font-size: 42px;
+  margin: 0;
+}
+.article__text {
+  font-size: 24px;
+  position: relative;
+  right: 50px;
+  margin: 12px;
+}
+.img > img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: rgba(212, 192, 199, 0.781) 0px 15px 25px 0px;
+}
+.img {
+  width: 30%;
+}
+.no-image {
+  width: 100%;
+  background-color: rgb(243, 242, 242);
+  padding: 100px 0;
+}
+.section-header > h2 {
+  font-size: 36px;
+  text-align: center;
+}
+.section-content {
+  width: 100%;
+  text-align: center;
+}
+.section-content > p {
+  padding: 15px 0;
+}
+
+.link {
+  background-color: white;
+  padding: 15px 0;
+  margin: 0 30%;
+  font-size: small;
+}
+.link-grey {
+  background-color: rgb(230, 238, 243);
+  padding: 15px 0;
+  font-size: small;
+}
+.grey-text {
+  background-color: rgb(243, 242, 242);
+  font-size: small;
+}
+.background-grey {
+  background-color: rgb(229, 237, 241);
+  padding: 5px 0;
+  font-size: small;
+}
+.pre {
+  width: 30%;
+  box-shadow: rgba(212, 192, 199, 0.781) 0px 0px 0px 1px;
+  font-size: 14px;
+  height: 30%;
+  margin-top: 50px;
+}
+.footer {
+  display: flex;
+  background-color: black;
+  height: 380px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+.footer__logo {
+  padding-bottom: 40px;
+}
+.footer__img {
+  width: 230px;
+  padding: 0 20px;
+}
+.footer__link {
+  text-decoration: none;
+  padding: 0 5px;
+}
+
+.footer__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  height: 30px;
+}
+
+.footer__text {
+  color: darkgray;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  font-size: small;
+}
