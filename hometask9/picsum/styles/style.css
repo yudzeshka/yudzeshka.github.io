@@ -4,6 +4,10 @@
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   letter-spacing: 1.5px;
 }
+a {
+  text-decoration: none;
+  color: #386bf3;
+}
 .image-right {
   display: flex;
   width: 100%;
@@ -70,8 +74,9 @@
 }
 .link-grey {
   background-color: rgb(230, 238, 243);
-  padding: 15px 0;
+  padding: 15px 10px;
   font-size: small;
+  text-decoration: none;
 }
 .grey-text {
   background-color: rgb(243, 242, 242);
@@ -124,4 +129,25 @@
   font-size: 14px;
   letter-spacing: 0.5px;
   font-size: small;
+}
+
+/* чтобы не так страшно открывался на телефоне */
+
+@media only screen and (max-width: 800px) {
+  .image-right,
+  .image-left,
+  .no-image {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .article,
+  .img,
+  .pre {
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+  }
 }
