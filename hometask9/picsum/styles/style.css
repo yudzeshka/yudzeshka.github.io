@@ -14,11 +14,8 @@ a {
   justify-content: space-evenly;
   padding: 100px 0;
 }
-.image-left {
-  display: flex;
-  width: 100%;
-  justify-content: space-evenly;
-  padding: 100px 0;
+
+.reverse {
   flex-direction: row-reverse;
 }
 .header-img {
@@ -114,6 +111,9 @@ a {
   text-decoration: none;
   padding: 0 5px;
 }
+.footer__link > .footer__text {
+  color: lightgray;
+}
 
 .footer__row {
   display: flex;
@@ -133,9 +133,13 @@ a {
 
 /* чтобы не так страшно открывался на телефоне */
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 700px) {
+  * {
+    text-align: center;
+    margin: 0 5px;
+    justify-content: center;
+  }
   .image-right,
-  .image-left,
   .no-image {
     display: flex;
     flex-direction: column;
@@ -146,8 +150,27 @@ a {
   .article,
   .img,
   .pre {
-    width: 80%;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    margin: 0 5px;
+    text-align: center;
+  }
+  .link {
+    margin: 0;
+  }
+  .footer__img {
+    width: 100%;
+  }
+  .footer__row {
+    margin: 0;
+  }
+  .header-img,
+  .article__text {
+    position: static;
+  }
+  .code {
+    letter-spacing: 0.8px;
+    text-align: start;
+    margin: 5px;
+    font-size: 9px;
   }
 }
