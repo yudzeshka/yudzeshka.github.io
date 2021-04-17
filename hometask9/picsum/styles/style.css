@@ -136,7 +136,7 @@ a {
 @media only screen and (max-width: 700px) {
   * {
     text-align: center;
-    margin: 0 5px;
+    margin: auto;
     justify-content: center;
   }
   .image-right,
@@ -151,7 +151,6 @@ a {
   .img,
   .pre {
     width: 100%;
-    margin: 0 5px;
     text-align: center;
   }
   .link {
