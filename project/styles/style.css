@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  color: white;
+  background-color: black;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+}
+.menu__body {
+  margin: auto;
+}
+.menu__icon > img {
+  justify-self: flex-start;
+}
+.menu__contacts {
+  display: flex;
+  width: 30%;
+  justify-content: flex-end;
+  font-size: 20px;
+  font-weight: 400;
+  margin: auto;
+}
+.menu__icon > img {
+  height: 120px;
+}
+.button {
+  font-size: 22px;
+  font-weight: 400;
+  border: 1px solid orange;
+  margin: auto;
+}
+.menu__link {
+  padding: 0 20px;
+}
+.menu__email {
+  padding: 0 30px;
+}
