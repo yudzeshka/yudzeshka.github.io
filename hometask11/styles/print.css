@@ -1,0 +1,39 @@
+@media print {
+  * {
+    font-family: "Times New Roman", Times, serif;
+    text-align: justify;
+  }
+  .header {
+    display: none;
+  }
+  .main h2 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.6rem;
+    padding-bottom: 10px;
+    margin: 0;
+  }
+  .section__title {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 1.5px 0;
+  }
+  .article {
+    font-size: 1rem;
+  }
+  .img {
+    display: none;
+  }
+  .footer {
+    display: none;
+  }
+}
+@media print and (orientation: landscape) {
+  .main {
+    column-count: 2;
+  }
+  .main h2 {
+    column-span: all;
+  }
+}
