@@ -8,3 +8,75 @@ body {
     rgba(3, 13, 18, 1) 100%
   );
 }
+
+.title {
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: white;
+  text-shadow: 2px 5px 0 rgba(0, 0, 0, 0.2);
+  font-style: italic;
+}
+
+.list {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.list ol {
+  counter-reset: li;
+  list-style: none;
+  *list-style: decimal;
+  font-size: 15px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 0;
+  margin-bottom: 4em;
+}
+.list ol ol {
+  margin: 0 0 0 2em;
+}
+
+.list a {
+  position: relative;
+  display: block;
+  padding: 0.4em 0.4em 0.4em 2em;
+  *padding: 0.4em;
+  margin: 0.5em 0;
+  background: #2b83b6;
+  color: white;
+  text-decoration: none;
+  -moz-border-radius: 0.3em;
+  -webkit-border-radius: 0.3em;
+  border-radius: 10em;
+  transition: all 0.3s ease-in-out;
+  font-style: italic;
+}
+
+.list a:hover {
+  background: #d6d4d4;
+  text-decoration: none;
+  text-align: center;
+  font-size: 2rem;
+  color: #2b83b6;
+}
+
+.list a:before {
+  content: counter(li);
+  counter-increment: li;
+  position: absolute;
+  left: -1.3em;
+  top: 50%;
+  margin-top: -1.3em;
+  background: #2b83b6;
+  height: 2em;
+  width: 2em;
+  line-height: 2em;
+  border: 0.3em solid #fff;
+  text-align: center;
+  font-weight: bold;
+  -moz-border-radius: 2em;
+  -webkit-border-radius: 2em;
+  border-radius: 2em;
+  color: #fff;
+}
