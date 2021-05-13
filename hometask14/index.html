@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>form</title>
+  </head>
+  <body>
+    <h1>Республика Беларусь</h1>
+    <h2>
+      Популяционное сероэпидемиологическое исследование на инфекцию COVID-19
+    </h2>
+    <form action="#" method="get" autocomplete="on" name="form">
+      <fieldset>
+        <legend>Персональная информация</legend>
+        <p>
+          <label for="fname">Имя <br /></label
+          ><input
+            type="text"
+            id="fname"
+            autofocus
+            placeholder="Введите имя"
+            required
+          />
+        </p>
+        <p>
+          <label for="lname">Фамилия <br /></label
+          ><input
+            type="text"
+            id="lname"
+            autofocus
+            placeholder="Введите фамилию"
+            required
+          />
+        </p>
+        <p>
+          <label for="pname">Отчество <br /></label
+          ><input
+            type="text"
+            id="pname"
+            autofocus
+            placeholder="Введите отчество"
+            required
+          />
+        </p>
+        <p>
+          <label for="gender">Выберите пол М/Ж </label>
+          <select name="gender" id="gender" required>
+            <option value="0">Выберите пол</option>
+            <option value="male">Мужской</option>
+            <option value="fermale">Женский</option>
+          </select>
+        </p>
+        <p>
+          <label for="date">Дата рождения </label
+          ><input type="date" name="date" id="date" required />
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Адрес</legend>
+        <p>
+          <label for="contry">Страна проживания <br /></label
+          ><input
+            type="text"
+            id="contry"
+            disabled
+            placeholder="Республика Беларусь"
+          />
+        </p>
+        <p>
+          <label for="district">Выберите район проживания </label
+          ><select name="district" id="district" required>
+            <option value="0">Выберите район проживания</option>
+            <option value="brest">1-Брестская область</option>
+            <option value="vitebsk">2-Витебская область</option>
+            <option value="gomel">3-Гомельская область</option>
+            <option value="grodno">4-Гродненская область</option>
+            <option value="minsk-district">5-Минская область</option>
+            <option value="mogilev">6-Могилевская область</option>
+            <option value="minsk">7-г.Минск</option>
+          </select>
+        </p>
+        <p>
+          <label for="date2"
+            >С какого года постоянно проживаете в Республике Беларусь </label
+          ><input type="date" name="date2" id="date2" required />
+        </p>
+        <p>
+          <label for="addres">Укажите адрес прописки в РБ по паспорту </label
+          ><input type="text" name="addres" id="addres" required />
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Контактная информация</legend>
+        <p>
+          <label for="tel">Контактный телефон </label
+          ><input
+            type="tel"
+            name="tel"
+            id="tel"
+            placeholder="+375(29)"
+            required
+          />
+        </p>
+        <p>
+          <label for="email">Email </label
+          ><input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Введите email"
+            required
+          />
+        </p>
+        <p>
+          <label for="sfere">Выберите сферу деятельности </label
+          ><select name="sfere" id="sfere" required>
+            <option value="0">Выберите сферу деятельности</option>
+            <option value="1">Медицина</option>
+            <option value="2">Наука</option>
+            <option value="3">Бизнес</option>
+            <option value="4">Образование</option>
+            <option value="5">Производство</option>
+            <option value="6">Транспорт</option>
+            <option value="7">Военная служба</option>
+            <option value="8">Офис</option>
+            <option value="9">Студент</option>
+            <option value="10">Другое</option>
+          </select>
+        </p>
+        <p>
+          <label for="work">Место работы (учебы) </label
+          ><input
+            type="text"
+            name="work"
+            id="work"
+            placeholder="Введите место работы"
+            required
+          />
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Специальные вопросы</legend>
+        <p>
+          <label for="q1"
+            >№1. Проводили ли Вам ПЦР исследование на SARS CoV-2 (Коронавирус
+            COVID-19)?</label
+          ><br />
+          <label for="q1">Да</label>
+          <input type="radio" name="q1" id="q1" required />
+          <label for="q1">Нет</label>
+          <input type="radio" name="q1" id="q1" required />
+        </p>
+        <p>
+          <label for="q2">№2. Был ли поставлен диагноз COVID-19?</label><br />
+          <label for="q2">Да</label>
+          <input type="radio" name="q2" id="q2" required />
+          <label for="q2">Нет</label>
+          <input type="radio" name="q2" id="q2" required />
+        </p>
+        <p>
+          <label for="q3"
+            >№3. Наличие симптомов ОРЗ на дату заполнения анкеты:</label
+          ><br />
+          <label for="q3">Да</label>
+          <input type="radio" name="q3" id="q3" required />
+          <label for="q3">Нет</label>
+          <input type="radio" name="q3" id="q3" required />
+        </p>
+        <p>
+          <label for="q4">№4. Наличие хронических заболеваний</label><br />
+          <label for="q4">Да</label>
+          <input type="radio" name="q4" id="q4" required />
+          <label for="q4">Нет</label>
+          <input type="radio" name="q4" id="q4" required />
+        </p>
+        <p>
+          <label for="q5"
+            >№5. Были ли в семье или на работе контакты с больными
+            COVID-19?</label
+          ><br />
+          <label for="q5">Да</label>
+          <input type="radio" name="q5" id="q5" required />
+          <label for="q5">Нет</label>
+          <input type="radio" name="q5" id="q5" required />
+        </p>
+        <p>
+          <label for="q6"
+            >№6. Укажите где Вы находитесь на дату заполнения Анкеты</label
+          ><br />
+          <select name="q6" id="q6" required>
+            <option value="0">Укажите где Вы находитесь</option>
+            <option value="1">Дома</option>
+            <option value="2">Продолжаю работать</option>
+          </select>
+        </p>
+        <p>
+          <label for="q7"
+            >№7. Был ли за последние 3 месяца выезд из страны</label
+          ><br />
+          <label for="q7">Да</label>
+          <input type="radio" name="q7" id="q7" required />
+          <label for="q7">Нет</label>
+          <input type="radio" name="q7" id="q7" required />
+        </p>
+        <p>
+          <label for="q8"
+            >№8. Был ли за последние 3 месяца выезд в другие регионы Республике
+            Беларусь</label
+          ><br />
+          <label for="q8">Да</label>
+          <input type="radio" name="q8" id="q8" required />
+          <label for="q8">Нет</label>
+          <input type="radio" name="q8" id="q8" required />
+        </p>
+        <p>
+          <label for="q9"
+            >№9. Принимали ли Вы иммуномодулирующие препараты после января 2021 </label
+          ><br />
+          <label for="q9">Да</label>
+          <input type="radio" name="q9" id="q9" required />
+          <label for="q9">Нет</label>
+          <input type="radio" name="q9" id="q9" required />
+        </p>
+        <p>
+          <label for="q10">№10. Курение (Нет/Да/Бросили)</label><br />
+          <label for="q10">Да</label>
+          <input type="radio" name="q10" id="q10" required />
+          <label for="q10">Нет</label>
+          <input type="radio" name="q10" id="q10" required />
+          <label for="q10">Бросил(а)</label>
+          <input type="radio" name="q10" id="q10" required />
+        </p>
+        <p>
+          <label for="q11"
+            >№11. По какой причине вы решили пройти данное исследование? </label
+          ><br />
+          <textarea
+            name="q11"
+            id="q11"
+            cols="60"
+            rows="10"
+            placeholder="Укажите причины"
+          ></textarea>
+        </p>
+      </fieldset>
+      <p>
+        <label for="q12"
+          >Согласие на участие в исследовании и обработку персональных
+          данных</label
+        ><br /><input type="checkbox" name="q12" id="q12" />
+      </p>
+      <p>
+        <label for="q13"
+          >Согласие на отправку результатов исследования на указанную выше
+          электронную почту</label
+        ><br /><input type="checkbox" name="q13" id="q13" />
+      </p>
+      <input type="submit" value="Отправить" />
+    </form>
+  </body>
+</html>
