@@ -114,7 +114,7 @@
   width: 25%;
   font-size: 20px;
   font-weight: 100;
-  padding: 0 5s%;
+  padding: 0 5%;
 }
 .head-page__footer {
   display: flex;
@@ -153,15 +153,16 @@ h2 {
 .content__block {
   font-size: 1.5rem;
 }
-
-/* .content__link-green li ::before {
-  content: "";
-  position: absolute;
-  display: block;                       ???????????????
-  width: 50px;
-  height: 50px;
-  background: url(../images/tick.svg);
-} */
-.content__link-green {
+.content__link-marker li {
   list-style: none;
+}
+
+.content__link-marker li::before {
+  content: "✔";
+  padding-right: 10px;
+  color: rgba(27, 228, 27, 0.7);
+  font-size: 2rem;
+}
+.content__link-marker li {
+  padding-bottom: 1rem;
 }
