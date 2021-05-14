@@ -72,30 +72,37 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 .reverse {
   flex-direction: row-reverse;
 }
 .left {
-  flex: 1 1 65%;
+  flex: 1 1 40%;
   font-size: 30px;
   font-weight: 100;
   padding: 40px 80px;
 }
 .right {
-  flex: 1 1 35%;
+  flex: 1 1 40%;
 }
 .left h1 {
   margin: auto;
   font-weight: 100;
   font-size: 3rem;
+  text-align: start;
 }
+.left h1::after {
+  content: <a href= "" >Подробнее</a>;
+}
+
 .button-block {
   margin-top: 2rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
+
 .content__button {
   /* width: 25%; */
   font-size: 30px;
@@ -152,6 +159,10 @@ h2 {
 
 .content__block {
   font-size: 1.5rem;
+}
+.content__block h1,
+a {
+  display: inline-block;
 }
 .content__link-marker li {
   list-style: none;
