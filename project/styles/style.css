@@ -6,8 +6,7 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-.head-page,
-.second-page {
+.head-page {
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -18,6 +17,7 @@
   display: flex;
   justify-content: space-between;
   border-bottom: 0.1px solid darkgrey;
+  padding: 0 5%;
 }
 .header__menu {
   display: flex;
@@ -67,68 +67,68 @@
   font-size: 1.6rem;
   font-weight: 600;
 }
-
+/* head page content */
 .content {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 5%;
 }
 .reverse {
   flex-direction: row-reverse;
 }
-.left {
-  flex: 1 1 40%;
+.head-page__left {
   font-size: 30px;
   font-weight: 100;
-  padding: 40px 80px;
+
+  flex-basis: 45%;
 }
-.right {
-  flex: 1 1 40%;
+.head-page__right {
+  flex-basis: 40%;
 }
-.left h1 {
+.head-page__left h1 {
   margin: auto;
   font-weight: 100;
   font-size: 3rem;
   text-align: start;
 }
-.left h1::after {
-  content: <a href= "" >Подробнее</a>;
-}
 
 .button-block {
   margin-top: 2rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: start;
   align-items: center;
 }
 
 .content__button {
-  /* width: 25%; */
   font-size: 30px;
   border: 1px solid orange;
-  margin: auto;
+
   font-weight: 100;
   padding: 1rem;
 }
 .content__addres {
-  width: 50%;
   font-size: 20px;
   font-weight: 100;
-  padding: 0 11%;
+  padding: 0 4%;
 }
 .content__time {
-  width: 25%;
   font-size: 20px;
   font-weight: 100;
-  padding: 0 5%;
+  padding: 0 4%;
 }
+/* head page footer */
+
 .head-page__footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   border-top: 0.1px solid darkgrey;
   size: 1rem;
+  padding: 0 5%;
 }
 .address {
   width: 65%;
@@ -149,6 +149,30 @@
 address {
   width: 200px;
 }
+/* second page content */
+
+.second-page {
+  height: 100vh;
+  width: 100vw;
+}
+.second-page__content {
+  display: flex;
+  padding: 0 5%;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-page__list {
+  font-size: 30px;
+  font-weight: 100;
+  flex-basis: 50%;
+}
+.second-page__img {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .content__link {
   list-style-type: none;
@@ -159,6 +183,9 @@ h2 {
 
 .content__block {
   font-size: 1.5rem;
+}
+.content__block {
+  list-style: none;
 }
 .content__block h1,
 a {
@@ -177,3 +204,112 @@ a {
 .content__link-marker li {
   padding-bottom: 1rem;
 }
+
+/* third page */
+
+.third-page {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.third-page__title {
+  text-align: center;
+  margin: auto;
+}
+
+.third_page__services {
+  height: 80vh;
+  padding: 0 5%;
+  display: grid;
+  grid-template: 33.33% 33.33% 33.33% / 25% 25% 50%;
+  grid-gap: 2%;
+  /* opacity: 0.2; */
+}
+.third-page__services-short {
+  border: green solid 1px;
+  align-items: center;
+  position: relative;
+}
+.third-page__services-long {
+  border: green solid 1px;
+  position: relative;
+  align-items: center;
+}
+
+.third-page__services-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.2;
+}
+.third_page__services-tittle {
+  background-color: transparent;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.third_page__services-tittle h2 {
+  background-color: transparent;
+  font-weight: 700;
+}
+.third_page__services-button {
+  position: absolute;
+  text-align: center;
+  top: 80%;
+  left: 40%;
+  padding: 1%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  background-color: white;
+  transform: skewX(-20deg);
+}
+.third_page__services-button a {
+  color: black;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+.third-page__button {
+  text-align: center;
+  margin: auto;
+  padding-top: 2%;
+}
+/* .third_page__services > :nth-child(1) {
+  background: url(../images/services/рем\ трансм.jpg) no-repeat center center;
+  background-size: cover;
+  opacity: 0.2;
+}
+.third_page__services > :nth-child(2) {
+  background: url(../images/services/рем\ подв.jpg) no-repeat center center;
+  background-size: cover;
+}
+.third_page__services > :nth-child(3) {
+  background: url(../images/services/шиномонтаж1.jfif) no-repeat center center;
+  background-size: cover;
+}
+.third_page__services > :nth-child(4) {
+  background: url(../images/services/рем\ двиг.jpg) no-repeat center center;
+  background-size: cover;
+}
+.third_page__services > :nth-child(5) {
+  background: url(../images/services/электро.jpg) no-repeat center center;
+  background-size: cover;
+}
+.third_page__services > :nth-child(6) {
+  background: url(../images/services/замена\ масла.jfif) no-repeat center center;
+  background-size: cover;
+}
+.third_page__services > :nth-child(7) {
+  background: url(../images/services/рем\ торм.jpg) no-repeat center center;
+  background-size: cover;
+}
+.third_page__services > :nth-child(8) {
+  background: url(../images/services/развал.jpg) no-repeat center center;
+  background-size: cover;
+}
+.third_page__services > :nth-child(9) {
+  background: url(../images/services/комп\ диагн.jpg) no-repeat center center;
+  background-size: cover;
+} */
