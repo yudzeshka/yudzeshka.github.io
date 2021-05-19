@@ -1,0 +1,157 @@
+:root {
+  --light: #eceff1;
+  --normal: #455a64;
+  --dark: #263238;
+}
+
+body {
+  background-image: url(https://cdn.hipwallpaper.com/i/54/58/J2YQU0.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+h1,
+h2 {
+  text-align: center;
+  background-color: var(--normal);
+  color: var(--light);
+  padding: 1rem;
+  margin: 0;
+}
+div {
+  border-radius: 5px;
+  background-color: var(--light);
+  padding: 20px;
+}
+
+select {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  padding: 12px 20px 12px 40px;
+  margin: 8px 0;
+  border: none;
+  border-bottom: 1px solid black;
+  background-color: var(--light);
+  color: var(--normal);
+
+  font-style: italic;
+}
+
+option {
+  color: var(--light);
+  background-color: var(--normal);
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  padding: 12px 20px 12px 40px;
+  margin: 8px 0;
+  border: none;
+  border-bottom: 1px solid black;
+  background-color: var(--light);
+}
+
+select:focus {
+  border: none;
+  border-bottom: 2px solid var(--normal);
+  outline: none;
+}
+
+input[type="text"]:focus {
+  width: 100%;
+  border: 2px solid var(--normal);
+  outline: none;
+  border-radius: 10px;
+}
+input[type="tel"]:focus {
+  width: 100%;
+  border: 2px solid var(--normal);
+  outline: none;
+  border-radius: 10px;
+}
+input[type="email"]:focus {
+  width: 100%;
+  border: 2px solid var(--normal);
+  outline: none;
+  border-radius: 10px;
+}
+
+input[type="submit"] {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: var(--normal);
+  color: var(--light);
+}
+
+input[type="submit"]:hover {
+  background-color: var(--dark);
+  transform: scaleY(1.2);
+  transition: 1s;
+}
+label {
+  display: block;
+}
+input [type="radio"] {
+  display: block;
+}
+.inline {
+  display: inline-block;
+  padding-bottom: 2rem;
+}
+#q11 {
+  width: 100%;
+}
+
+@media (max-width: 480px) {
+  label {
+    display: none;
+  }
+  .sq {
+    display: block;
+    font-size: 0.6rem;
+  }
+  select {
+    font-size: small;
+    width: 100%;
+    font-style: italic;
+  }
+
+  input [type="radio"] {
+    display: block;
+  }
+  .inline {
+    display: inline-block;
+    padding-bottom: 1rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  label {
+    display: inline-block;
+  }
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"] {
+    box-sizing: border-box;
+    display: inline-block;
+    width: auto;
+  }
+  select {
+    display: inline-block;
+    width: auto;
+    font-style: italic;
+  }
+  .inline {
+    padding-left: 1rem;
+  }
+}
