@@ -18,6 +18,8 @@
   justify-content: space-between;
   border-bottom: 0.1px solid darkgrey;
   padding: 0 5%;
+  /* position: fixed;
+  z-index: 1000; */
 }
 .header__menu {
   display: flex;
@@ -265,11 +267,11 @@ address {
 }
 .second-page__list p,
 li {
-  font-size: 2rem;
+  font-size: 1.5vw;
 }
 .second-page__list p {
   margin: 0;
-  padding: 1rem 0;
+  padding: 0.7rem 0;
 }
 .second-page__img {
   flex-basis: 50%;
@@ -289,13 +291,12 @@ li {
 }
 h2 {
   font-weight: 100;
+  margin: 1vw;
 }
 
 .content__block {
-  font-size: 1.5rem;
-}
-.content__block {
   list-style: none;
+  font-size: 1.5rem;
 }
 .content__block h1,
 a {
