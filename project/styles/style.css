@@ -61,15 +61,7 @@
 .button {
   display: inline-block;
   vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
-  background: black;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
   transform: skewX(-20deg);
 }
 .button:before {
@@ -81,26 +73,15 @@
   left: 0;
   right: 0;
   background: rgb(185, 134, 57);
-  -webkit-transform: scaleY(0);
   transform: scaleY(0);
-  -webkit-transform-origin: 50%;
   transform-origin: 50%;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.button:hover,
-.button:focus,
-.button:active {
-  color: white;
-}
+
 .button:hover:before,
 .button:focus:before,
 .button:active:before {
-  -webkit-transform: scaleY(1);
   transform: scaleY(1);
 }
 
@@ -110,9 +91,7 @@
 .underline {
   display: inline-block;
   vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
   overflow: hidden;
 }
@@ -125,11 +104,8 @@
   bottom: 0;
   background: white;
   height: 1px;
-  -webkit-transition-property: left, right;
   transition-property: left, right;
-  -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
 .underline:hover:before,
@@ -142,13 +118,13 @@
 
 .menu__email {
   padding: 0 30px;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .button a,
 .menu__body a,
 .menu__contacts a {
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 /* head page content */
@@ -163,7 +139,8 @@
   flex-basis: 80%;
 }
 .content img {
-  height: 100%;
+  max-height: 100%;
+  max-width: 100%;
 }
 .reverse {
   flex-direction: row-reverse;
@@ -174,20 +151,21 @@
   justify-content: center;
   font-size: 30px;
   font-weight: 100;
-  height: 100%;
+  max-height: 100%;
   flex-basis: 50%;
+  max-width: 100%;
 }
 .head-page__right {
   display: flex;
   align-items: center;
   flex-basis: 50%;
-  height: 100%;
+  max-height: 100%;
   align-items: center;
 }
 .head-page__left h1 {
   margin: auto;
   font-weight: 100;
-  font-size: 3rem;
+  font-size: calc(16px + (48 - 16) * ((100vw - 320px) / (1800 - 320)));
   text-align: start;
 }
 
