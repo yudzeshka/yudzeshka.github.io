@@ -21,8 +21,8 @@
   justify-content: space-between;
   border-bottom: 0.1px solid darkgrey;
   padding: 0 5%;
-  position: fixed;
-  z-index: 1000;
+  /* position: fixed; */
+  /* z-index: 1000; */
   width: 100%;
 }
 .header__menu {
@@ -342,30 +342,32 @@ a {
 .third_page__services-tittle {
   background-color: transparent;
   position: absolute;
-  top: 20%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 .third_page__services-tittle h2 {
   background-color: transparent;
   font-weight: 700;
-  font-size: 2.2rem;
+  /* font-size: 2.2rem; */
+  font-size: calc(10px + (35 - 10) * ((100vw - 320px) / (1800 - 320)));
 }
 .third_page__services-button {
   position: absolute;
   text-align: center;
   top: 18vh;
   left: 3vh;
-  padding: 1rem 1.5rem;
+  padding: calc(5px + (18 - 5) * ((100vw - 320px) / (1800 - 320)));
   transform: translate(-50%, -50%);
-  font-size: 1.5rem;
+  font-size: calc(8px + (24 - 8) * ((100vw - 320px) / (1800 - 320)));
   transform: skewX(-20deg);
   border: 1px solid rgb(185, 134, 57);
 }
 .third_page__services-button a {
   color: white;
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
   text-decoration: none;
+  font-size: calc(8px + (24 - 8) * ((100vw - 320px) / (1800 - 320)));
 }
 .third-page__button {
   text-align: center;
@@ -485,11 +487,12 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .cube {
-  min-width: 160px;
-  height: 800px;
+  min-width: 140px;
+  height: 700px;
   transform-style: preserve-3d;
   /* backface-visibility: hidden; */
   animation-name: rotate;
@@ -689,4 +692,34 @@ img {
   width: 100%;
   background-color: rgb(17, 187, 68);
   cursor: pointer;
+}
+
+/* MEDIA */
+
+@media (max-width: 1360px) {
+  .menu__contacts {
+    font-size: 15px;
+  }
+  .menu__email {
+    display: none;
+  }
+  .menu__icon > img {
+    height: 90px;
+  }
+
+  .button {
+    padding: 0.7rem;
+  }
+
+  .menu__link {
+    padding: 0 15px;
+  }
+
+  .cube {
+    min-width: 100px;
+    height: 500px;
+  }
+  .button-block {
+    flex-wrap: wrap;
+  }
 }
