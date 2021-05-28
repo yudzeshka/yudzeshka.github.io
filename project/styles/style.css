@@ -6,6 +6,9 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+.wrapper {
+  position: relative;
+}
 .head-page {
   height: 100vh;
   width: 100vw;
@@ -645,4 +648,45 @@ img {
 .footer__social a :hover,
 .social a:hover {
   opacity: 0.7;
+}
+
+/* scroll  */
+.page__pagination {
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  transform: translate(0px, -50%);
+  display: flex;
+  flex-direction: column;
+}
+
+.page__bullet {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  background-color: rgba(219, 23, 193, 0.5);
+  margin: 10px 0;
+  border-radius: 50%;
+  z-index: 100;
+  /* transition: background-color 0.3s ease 0s; */
+}
+.page__bullet_active {
+  background-color: rgb(43, 171, 194);
+}
+
+.page__scroll {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 4px;
+  background-color: rgb(236, 148, 15);
+  height: 100%;
+}
+.page__drag-scroll {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(17, 187, 68);
+  cursor: pointer;
 }

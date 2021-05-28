@@ -15,6 +15,7 @@
   align-items: center;
   background-image: url(../images/black-background.jpg);
   background-size: cover;
+  position: relative;
 }
 .header {
   display: flex;
