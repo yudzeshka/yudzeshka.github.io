@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/services-styles.css" />
-    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="../styles/services-styles.css" />
+    <link rel="stylesheet" href="../styles/normalize.css" />
+    <link rel="stylesheet" href="../styles/city-tour-modal.css" />
     <title>Шиномонтаж</title>
   </head>
   <body>
@@ -13,14 +14,40 @@
       <div class="header">
         <div class="header__menu">
           <div class="menu__icon">
-            <img src="./images/logo.jpg" alt="logo" />
+            <img src="../images/logo.jpg" alt="logo" />
           </div>
           <nav class="menu__body">
             <a href="#head-page" class="menu__link underline">Главная</a>
             <a href="#services" class="menu__link underline">Услуги</a>
             <a href="#galery" class="menu__link underline">Галерея</a>
           </nav>
-          <div class="button"><a href="#">Записаться</a></div>
+          <div class="city-tour-btn button" id="openBtn">Запись Online</div>
+          <div class="modal" id="modal">
+            <div class="modal__content">
+              <div class="modal__form">
+                <form action="" class="form" name="tour">
+                  <label for="standart" class="form-header">Форма записи</label>
+
+                  <label for="name" class="small-label">Имя:</label>
+                  <input type="text" id="name" class="input-text" />
+
+                  <label for="name" class="small-label">Email:</label>
+                  <input type="email" id="name" class="input-text" />
+
+                  <label for="name" class="small-label"
+                    >Телефон для связи</label
+                  >
+                  <input type="tel" id="name" class="input-text" />
+
+                  <label for="name" class="small-label">Желаемая дата:</label>
+                  <input type="date" id="name" class="input-text date" />
+
+                  <input type="submit" value="Записаться" />
+                </form>
+              </div>
+              <span id="closeBtn">&times</span>
+            </div>
+          </div>
         </div>
         <div class="menu__contacts">
           <div class="menu__tel">
@@ -32,7 +59,7 @@
       <div class="content">
         <article class="article">
           <div class="img">
-            <img src="./images/services/шиномонтаж1.jfif" alt="tire" />
+            <img src="../images/services/шиномонтаж1.jfif" alt="tire" />
           </div>
           <div class="text">
             <p>
@@ -67,7 +94,7 @@
       <div class="fourth-page__footer">
         <div class="footer-row">
           <div class="footer__logo">
-            <img src="./images/logo.jpg" alt="logo" />
+            <img src="../images/logo.jpg" alt="logo" />
             <p>
               2010-2021 <br />
               &copy Все права защищены
@@ -104,15 +131,16 @@
             <a href="#"
               ><img
                 class="social__img"
-                src="./images/inst.png"
+                src="../images/inst.png"
                 alt="instagram-logo"
             /></a>
             <a href="#"
-              ><img class="social__img" src="./images/vk2.png" alt="vk-logo"
+              ><img class="social__img" src="../images/vk2.png" alt="vk-logo"
             /></a>
           </div>
         </div>
       </div>
     </div>
+    <script src="../script/city-tour-modal.js"></script>
   </body>
 </html>

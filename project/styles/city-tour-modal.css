@@ -1,0 +1,136 @@
+.city-tour-btn span {
+  display: block;
+}
+.city-tour-btn {
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+/* modal */
+
+.modal {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: whitesmoke;
+  transition: 0.3s;
+}
+
+.modal__content {
+  font-size: 2rem;
+  width: auto;
+}
+
+.modal__content span {
+  position: absolute;
+  right: 1%;
+  top: 1%;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal__form {
+  display: flex;
+  width: auto;
+  height: auto;
+  background-color: rgb(219, 219, 219);
+  color: rgb(50, 52, 59);
+
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.modal__form .form-header {
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  border-bottom: 5px solid rgb(219, 219, 219);
+  flex-basis: 50;
+  padding: 5px 30px;
+  color: white;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.modal__form input[type="submit"] {
+  display: block;
+  appearance: none;
+  border: none;
+  width: 100%;
+  box-sizing: border-box;
+  cursor: pointer;
+  color: whitesmoke;
+  background-color: black;
+  font-size: 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  letter-spacing: 0.1rem;
+  transition: 0.2s;
+  border: orange 1px solid;
+  padding: 5px 0;
+}
+
+.modal__form input[type="submit"]:hover {
+  background-color: gray;
+  color: rgb(50, 52, 59);
+}
+
+.modal__form input[type="submit"]:active {
+  outline: none;
+  border: none;
+}
+
+.small-label {
+  font-size: 1.5rem;
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.modal__form .input-text {
+  appearance: none;
+  border: none;
+  display: block;
+  box-sizing: border-box;
+  width: 90%;
+  margin: 0 auto;
+
+  line-height: 30px;
+  border-radius: 5px;
+  background-color: whitesmoke;
+}
+
+.modal__form .input-text.date {
+  margin-bottom: 10px;
+  background-color: whitesmoke;
+  line-height: 30px;
+  color: gray;
+}
+
+@media (max-width: 1360px) {
+  .city-tour-btn {
+    padding: 0.7rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  .city-tour-btn {
+    font-size: 1rem;
+  }
+}

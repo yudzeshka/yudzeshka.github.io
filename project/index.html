@@ -7,6 +7,7 @@
     <title>Garage</title>
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/city-tour-modal.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -23,11 +24,48 @@
                 <a href="#services" class="menu__link underline">Услуги</a>
                 <a href="#galery" class="menu__link underline">Галерея</a>
               </nav>
-              <div class="button"><a href="#">Записаться</a></div>
+              <div class="city-tour-btn button" id="openBtn">Запись Online</div>
+              <div class="modal" id="modal">
+                <div class="modal__content">
+                  <div class="modal__form">
+                    <form action="" class="form" name="tour">
+                      <label for="standart" class="form-header"
+                        >Форма записи</label
+                      >
+
+                      <label for="name" class="small-label">Имя:</label>
+                      <input type="text" id="name" class="input-text" />
+
+                      <label for="name" class="small-label">Email:</label>
+                      <input type="email" id="name" class="input-text" />
+
+                      <label for="name" class="small-label"
+                        >Телефон для связи</label
+                      >
+                      <input type="tel" id="name" class="input-text" />
+
+                      <label for="name" class="small-label"
+                        >Желаемая дата:</label
+                      >
+                      <input type="date" id="name" class="input-text date" />
+
+                      <input type="submit" value="Записаться" />
+                    </form>
+                  </div>
+                  <span id="closeBtn">&times</span>
+                </div>
+              </div>
+              <!-- <div class="button">
+                <a href="tel:+37529397959">Записаться</a>
+              </div> -->
             </div>
+            <!-- form -->
+
+            <!-- for m -->
+
             <div class="menu__contacts">
               <div class="menu__tel">
-                <a href="">+375(29)397959</a>
+                <a href="tel:+37529397959">+375(29)397959</a>
               </div>
               <div class="menu__email">garage@gmail.com</div>
             </div>
@@ -43,7 +81,9 @@
               </div>
               <div class="button-block">
                 <div class="btn">
-                  <div class="button"><a href="#">Записаться</a></div>
+                  <div class="button">
+                    <a href="tel:+37529397959">Записаться</a>
+                  </div>
                 </div>
                 <div class="content__addres">
                   Республика Беларусь <br />
@@ -86,13 +126,13 @@
               </address>
             </div>
             <div class="social">
-              <a href="#"
+              <a href="instagram.com"
                 ><img
                   class="social__img"
                   src="./images/inst.png"
                   alt="instagram-logo"
               /></a>
-              <a href="#"
+              <a href="vk.com"
                 ><img class="social__img" src="./images/vk2.png" alt="vk-logo"
               /></a>
             </div>
@@ -192,7 +232,7 @@
                 <h2>Шиномонтаж</h2>
               </div>
               <div class="third_page__services-button">
-                <a href="http://#">Подробнее</a>
+                <a href="./services/tire.html">Подробнее</a>
               </div>
             </div>
             <div class="third-page__services-short">
@@ -275,7 +315,9 @@
             </div>
           </div>
           <div class="third-page__button">
-            <div class="button"><a href="#">Записаться в сервис</a></div>
+            <div class="button">
+              <a href="tel:+37529397959">Записаться в сервис</a>
+            </div>
           </div>
         </div>
         <!-- Page 4 -->
@@ -492,7 +534,8 @@
 
     <!-- scroll -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./script/city-tour-modal.js"></script>
 
-    <script src="./script.js"></script>
+    <script src="./script/script.js"></script>
   </body>
 </html>
