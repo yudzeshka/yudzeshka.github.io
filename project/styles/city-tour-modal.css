@@ -60,7 +60,7 @@
   text-transform: uppercase;
   display: block;
   text-align: center;
-  border-bottom: 5px solid rgb(219, 219, 219);
+  border-bottom: 5px solid orange;
   flex-basis: 50;
   padding: 5px 30px;
   color: white;
@@ -84,11 +84,12 @@
   transition: 0.2s;
   border: orange 1px solid;
   padding: 5px 0;
+  border-radius: 5px;
 }
 
 .modal__form input[type="submit"]:hover {
-  background-color: gray;
-  color: rgb(50, 52, 59);
+  background-color: rgb(31, 30, 30);
+  color: orange;
 }
 
 .modal__form input[type="submit"]:active {

@@ -880,3 +880,12 @@ img {
     font-size: 1.5rem;
   }
 }
+
+@media (max-width: 565px) {
+  .menu__contacts {
+    display: none;
+  }
+  .header__menu {
+    width: 100%;
+  }
+}
