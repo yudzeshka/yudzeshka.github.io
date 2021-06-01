@@ -1,7 +1,7 @@
-.city-tour-btn span {
+.form-btn span {
   display: block;
 }
-.city-tour-btn {
+.form-btn {
   font-size: 1.5rem;
   font-weight: 600;
   cursor: pointer;
@@ -125,13 +125,13 @@
 }
 
 @media (max-width: 1360px) {
-  .city-tour-btn {
+  .form-btn {
     padding: 0.7rem;
   }
 }
 
 @media (max-width: 1100px) {
-  .city-tour-btn {
+  .form-btn {
     font-size: 1rem;
   }
 }

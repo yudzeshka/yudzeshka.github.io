@@ -879,9 +879,6 @@ img {
   .third-page__title h1 {
     font-size: 1.5rem;
   }
-}
-
-@media (max-width: 565px) {
   .menu__contacts {
     display: none;
   }

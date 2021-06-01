@@ -133,8 +133,8 @@
 /* content */
 
 .content {
-  max-height: 80vh;
-  width: 40%;
+  max-height: auto;
+  width: 50%;
   /* padding: 0 30%; */
   text-align: center;
 }
@@ -212,6 +212,13 @@ form {
   background-color: black;
 }
 
+.text {
+  text-align: start;
+}
+.img img {
+  border-radius: 2%;
+}
+
 /* MEDIA */
 
 @media (max-width: 1360px) {
@@ -224,11 +231,6 @@ form {
   .menu__icon > img {
     height: 90px;
   }
-
-  .content__time,
-  .content__addres {
-    font-size: 1.1rem;
-  }
   .button {
     padding: 0.7rem;
   }
@@ -236,20 +238,13 @@ form {
   .menu__link {
     padding: 0 15px;
   }
-
-  .cube {
-    min-width: 100px;
-    height: 500px;
+  .content {
+    width: 60%;
   }
-  .button-block {
-    flex-wrap: wrap;
-  }
-  .content__block h2 {
-    font-size: 16px;
-  }
-  .content img {
-    height: 100%;
-    width: 100%;
+  .content li,
+  .content p,
+  .content h3 {
+    font-size: 1rem;
   }
 }
 
@@ -268,71 +263,45 @@ form {
   .button a {
     font-size: 1rem;
   }
-
-  .content__time,
-  .content__addres {
-    font-size: 1rem;
-  }
-  .cube {
-    min-width: 80px;
-    height: 400px;
-  }
   .social__img {
     width: 20px;
   }
-  .second-page__img {
-    max-width: 80%;
-    max-height: 80%;
+  .content {
+    width: 60%;
   }
-  .content,
-  .second-page__content,
-  .third_page__services {
-    padding: 0 2%;
-  }
-  .second-page__content li {
-    padding-bottom: 10px;
+  .content li,
+  .content p,
+  .content h3,
+  .content h4 {
+    font-size: 0.8rem;
   }
 }
 
 @media (max-width: 880px) {
-  .head-page,
-  .second-page,
-  .third-page,
-  .fourth-page {
+  .wrapper {
     height: auto;
     width: auto;
   }
   .header a {
     padding: 0 5px;
   }
-  .content__time {
-    display: inline;
+  .content {
+    width: 70%;
   }
-  .cube {
-    min-width: 65px;
-    height: 325px;
-  }
-  .content__time,
-  .content__addres {
+  .content li,
+  .content p,
+  .content h3,
+  .content h4 {
     font-size: 0.8rem;
   }
-  .head-page__footer {
-    display: none;
-  }
-  .content__link-marker li::before {
-    font-size: 1rem;
-  }
 }
+
 @media (max-width: 670px) {
   .header__menu .button {
     display: none;
   }
   .button {
     display: block;
-  }
-  .cube {
-    min-width: 50px;
-    height: 250px;
   }
   address a,
   p,
@@ -342,62 +311,41 @@ form {
   .social__img {
     width: 15px;
   }
+  .content {
+    width: 80%;
+  }
+  .content li,
+  .content p,
+  .content h3,
+  .content h4 {
+    font-size: 0.8rem;
+  }
+  .img {
+    height: auto;
+    width: 100%;
+  }
 }
 
 @media (max-width: 565px) {
-  .cube {
-    min-width: 40px;
-    height: 200px;
-  }
   address a,
   p,
   div {
     font-size: 0.3rem;
   }
-  .second-page__img {
-    display: none;
+  .content {
+    width: 90%;
+    overflow: scroll;
   }
-  .second-page__list {
-    flex-basis: 100%;
-    padding: 10px 0;
-    border-top: 1px solid white;
-  }
-  .second-page__content li {
+  .content li,
+  .content p,
+  .content h3,
+  .content h4 {
     font-size: 0.8rem;
   }
-  .second-page__content p {
-    font-size: 0.8rem;
-  }
-  .second-page__content h2 {
-    font-size: 1.3rem;
-    padding: 10px 0;
-  }
-  .content__addres,
-  .content__time {
+  .menu__contacts {
     display: none;
   }
-  .third-page__title {
-    font-size: 1rem;
-  }
-  .third_page__services {
-    height: auto;
-    padding: 0 5%;
-    display: grid;
-    grid-template: 25% 25% 25% 25% / 50% 50%;
-    grid-gap: 2%;
-  }
-  .third-page__button {
-    padding-top: 15%;
-  }
-  .third_page__services-button {
-    top: 80%;
-    left: 10%;
-  }
-  .third_page__services-tittle h2 {
-    font-size: 1rem;
-  }
-
-  .third-page__title h1 {
-    font-size: 1.5rem;
+  .header__menu {
+    width: 100%;
   }
 }
