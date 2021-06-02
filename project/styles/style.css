@@ -651,7 +651,7 @@ img {
 }
 
 /* scroll  */
-.page__pagination {
+/* .page__pagination {
   position: absolute;
   top: 50%;
   right: 50px;
@@ -669,7 +669,7 @@ img {
   border-radius: 50%;
   z-index: 100;
   /* transition: background-color 0.3s ease 0s; */
-}
+/* }
 .page__bullet_active {
   background-color: rgb(43, 171, 194);
 }
@@ -689,7 +689,7 @@ img {
   width: 100%;
   background-color: rgb(17, 187, 68);
   cursor: pointer;
-}
+} */
 
 /* MEDIA */
 
