@@ -54,7 +54,6 @@
 }
 /* Анимация начало кнопки */
 
-/* Shutter Out Vertical */
 .button {
   display: inline-block;
   vertical-align: middle;
@@ -236,6 +235,9 @@
   height: 50%;
   width: 100%;
 }
+.content__block h2 {
+  font-size: calc(14px + (28 - 14) * ((100vw - 320px) / (1800 - 320)));
+}
 
 .second-page__list {
   font-size: 30px;
@@ -245,7 +247,7 @@
 }
 .second-page__list p,
 li {
-  font-size: 1.4vw;
+  font-size: calc(10px + (24 - 10) * ((100vw - 320px) / (1800 - 320)));
 }
 .second-page__list p {
   margin: 0;
@@ -306,6 +308,10 @@ a {
 .third-page__title {
   text-align: center;
   margin: auto;
+}
+
+.third-page__title h1 {
+  font-size: 2.5rem;
 }
 
 .third_page__services {
@@ -414,44 +420,6 @@ a {
 }
 
 /* Анимация услуг конец */
-
-/* .third_page__services > :nth-child(1) {
-  background: url(../images/services/рем\ трансм.jpg) no-repeat center center;
-  background-size: cover;
-  opacity: 0.2;
-}
-.third_page__services > :nth-child(2) {
-  background: url(../images/services/рем\ подв.jpg) no-repeat center center;
-  background-size: cover;
-}
-.third_page__services > :nth-child(3) {
-  background: url(../images/services/шиномонтаж1.jfif) no-repeat center center;
-  background-size: cover;
-}
-.third_page__services > :nth-child(4) {
-  background: url(../images/services/рем\ двиг.jpg) no-repeat center center;
-  background-size: cover;
-}
-.third_page__services > :nth-child(5) {
-  background: url(../images/services/электро.jpg) no-repeat center center;
-  background-size: cover;
-}
-.third_page__services > :nth-child(6) {
-  background: url(../images/services/замена\ масла.jfif) no-repeat center center;
-  background-size: cover;
-}
-.third_page__services > :nth-child(7) {
-  background: url(../images/services/рем\ торм.jpg) no-repeat center center;
-  background-size: cover;
-}
-.third_page__services > :nth-child(8) {
-  background: url(../images/services/развал.jpg) no-repeat center center;
-  background-size: cover;
-}
-.third_page__services > :nth-child(9) {
-  background: url(../images/services/комп\ диагн.jpg) no-repeat center center;
-  background-size: cover;
-} */
 
 /* fourth page */
 .fourth-page {
@@ -650,47 +618,6 @@ img {
   opacity: 0.7;
 }
 
-/* scroll  */
-/* .page__pagination {
-  position: absolute;
-  top: 50%;
-  right: 50px;
-  transform: translate(0px, -50%);
-  display: flex;
-  flex-direction: column;
-}
-
-.page__bullet {
-  width: 15px;
-  height: 15px;
-  cursor: pointer;
-  background-color: rgba(219, 23, 193, 0.5);
-  margin: 10px 0;
-  border-radius: 50%;
-  z-index: 100;
-  /* transition: background-color 0.3s ease 0s; */
-/* }
-.page__bullet_active {
-  background-color: rgb(43, 171, 194);
-}
-
-.page__scroll {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 4px;
-  background-color: rgb(236, 148, 15);
-  height: 100%;
-}
-.page__drag-scroll {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgb(17, 187, 68);
-  cursor: pointer;
-} */
-
 /* MEDIA */
 
 @media (max-width: 1360px) {
@@ -723,9 +650,7 @@ img {
   .button-block {
     flex-wrap: wrap;
   }
-  .content__block h2 {
-    font-size: 16px;
-  }
+
   .content img {
     height: 100%;
     width: 100%;
@@ -771,6 +696,9 @@ img {
   .second-page__content li {
     padding-bottom: 10px;
   }
+  .third-page__title h1 {
+    font-size: 2.5rem;
+  }
 }
 
 @media (max-width: 880px) {
@@ -801,6 +729,9 @@ img {
   .content__link-marker li::before {
     font-size: 1rem;
   }
+  .third-page__title h1 {
+    font-size: 2rem;
+  }
 }
 @media (max-width: 670px) {
   .header__menu .button {
@@ -808,6 +739,9 @@ img {
   }
   .button {
     display: block;
+  }
+  .head-page__right img {
+    min-width: 100%;
   }
   .cube {
     min-width: 50px;
@@ -820,6 +754,12 @@ img {
   }
   .social__img {
     width: 15px;
+  }
+  .second-page__list {
+    font-weight: 300;
+  }
+  .content {
+    padding-top: 5%;
   }
 }
 
@@ -884,5 +824,15 @@ img {
   }
   .header__menu {
     width: 100%;
+  }
+
+  .content {
+    flex-direction: column-reverse;
+  }
+  .button-block {
+    justify-content: center;
+  }
+  .button-block {
+    padding-bottom: 0.5rem;
   }
 }
