@@ -1,0 +1,85 @@
+/* .tooltip {
+  padding: 15px;
+  border: 1px solid #d6e9c6;
+  border-radius: 4px;
+  color: #3c763d;
+  background-color: #dff0d8;
+}
+
+#template-store {
+  display: none;
+} */
+
+body {
+  box-sizing: border-box;
+  padding: 15px;
+  margin: 0;
+  background-image: url(/media/img/backgroundImage5.jpg);
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.datastyles {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+.datastyles > h1 {
+  font-size: calc(30px + (65 - 30) * ((100vw - 320px) / (1800 - 320)));
+  font-weight: 100;
+  color: black;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ffffff,
+    0 0 30px #ffffff, 0 0 40px #ffffff, 0 0 55px #ffffff, 0 0 75px #ffffff;
+}
+
+.datastyles > p {
+  font-size: calc(20px + (35 - 20) * ((100vw - 320px) / (1800 - 320)));
+  align-self: start;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.diapstyles {
+  font-size: calc(20px + (35 - 20) * ((100vw - 320px) / (1800 - 320)));
+  align-self: start;
+  justify-self: end;
+  font-weight: 500;
+  color: darkslategray;
+}
+
+.positive {
+  color: green;
+  font-size: calc(25px + (45 - 25) * ((100vw - 320px) / (1800 - 320)));
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ffffff,
+    0 0 30px #ffffff, 0 0 40px #ffffff, 0 0 55px #ffffff, 0 0 75px #ffffff;
+}
+
+.negative {
+  color: darkred;
+  font-size: calc(25px + (45 - 25) * ((100vw - 320px) / (1800 - 320)));
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ffffff,
+    0 0 30px #ffffff, 0 0 40px #ffffff, 0 0 55px #ffffff, 0 0 75px #ffffff;
+}
+
+.sadImg {
+  text-align: center;
+  width: 150px;
+  height: 150px;
+}
+
+#app > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: calc(20px + (45 - 20) * ((100vw - 320px) / (1800 - 320)));
+  color: darkred;
+}
