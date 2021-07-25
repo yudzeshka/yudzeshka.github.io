@@ -13,7 +13,7 @@ const sides = [
 const lowerBound = 0;
 const upperBound = 1000;
 const sadImg = document.createElement("img");
-sadImg.src = "./media/img/sadsmile.png";
+sadImg.src = "../media/img/sadsmile.png";
 sadImg.className = "sadImg";
 
 function renderErrorScreen(messages) {
