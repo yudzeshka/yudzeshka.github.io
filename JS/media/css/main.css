@@ -14,7 +14,7 @@ body {
   box-sizing: border-box;
   padding: 15px;
   margin: 0;
-  background-image: url(./img/backgroundImage5.jpg);
+  background-image: url(../img/backgroundImage5.jpg);
   background-size: cover;
   height: 100vh;
   width: 100vw;
@@ -82,4 +82,6 @@ body {
   flex-direction: column;
   font-size: calc(20px + (45 - 20) * ((100vw - 320px) / (1800 - 320)));
   color: darkred;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ffffff,
+    0 0 30px #ffffff, 0 0 40px #ffffff, 0 0 55px #ffffff, 0 0 75px #ffffff;
 }

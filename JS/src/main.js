@@ -7,7 +7,7 @@ import { getAnswerPhrase } from "./triangles/output.js";
 const sides = [
   { sideName: "a", sideLength: 300 },
   { sideName: "b", sideLength: 400 },
-  { sideName: "c", sideLength: 4200 },
+  { sideName: "c", sideLength: 1100 },
 ];
 
 const lowerBound = 0;
