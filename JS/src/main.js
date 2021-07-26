@@ -12,14 +12,15 @@ const sides = [
 
 const lowerBound = 0;
 const upperBound = 1000;
-const sadImg = document.createElement("img");
-sadImg.src = "./media/img/sadsmile.png";
-sadImg.className = "sadImg";
+
 
 function renderErrorScreen(messages) {
   const fragment = new DocumentFragment();
 
   const errorListElement = document.createElement("div");
+  const sadImg = document.createElement("img");
+sadImg.src = "./media/img/sadsmile.png";
+sadImg.className = "sadImg";
 
   messages.forEach((message) => {
     const messageItem = document.createElement("p");

@@ -10,6 +10,11 @@
   display: none;
 } */
 
+p,
+h1 {
+  margin-top: 0;
+}
+
 body {
   box-sizing: border-box;
   padding: 15px;
