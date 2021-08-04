@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./media/css/main.css" />
+
+    <title>Task Manager</title>
+  </head>
+  <body>
+    <h1>Проверка треугольника по сторонам</h1>
+    <form action="#" name="newTriangle" id="new-triangle">
+      <fieldset name="side1" class="fieldset">
+        <input
+          type="text"
+          name="side1name"
+          id="side1name"
+          placeholder="Введите название стороны"
+        />
+        <input
+          type="text"
+          name="side1value"
+          id="side1value"
+          placeholder="Введите длину стороны"
+        />
+      </fieldset>
+
+      <fieldset name="side2" class="fieldset">
+        <input
+          type="text"
+          name="side2name"
+          id="side2name"
+          placeholder="Введите название стороны"
+        />
+        <input
+          type="text"
+          name="side2value"
+          id="side2value"
+          placeholder="Введите длину стороны"
+        />
+      </fieldset>
+
+      <fieldset class="fieldset" name="side3">
+        <input
+          type="text"
+          name="side3name"
+          id="side3name"
+          placeholder="Введите название стороны"
+        />
+        <input
+          type="text"
+          name="side3value"
+          id="side3value"
+          placeholder="Введите длину стороны"
+        />
+      </fieldset>
+
+      <fieldset name="bounds" class="fieldset">
+        <input
+          type="text"
+          name="lowerBound"
+          id="lowerBound"
+          placeholder="Введите минимальное допустимое значение"
+          class="inputclass"
+        />
+        <input
+          type="text"
+          name="upperBound"
+          id="upperBound"
+          placeholder="Введите максимальное допустимое значение"
+          class="inputclass"
+        />
+      </fieldset>
+
+      <fieldset name="controls" class="fieldset">
+        <input type="button" value="Check" id="button1" />
+      </fieldset>
+    </form>
+
+    <!-- main application block -->
+    <div id="app">
+      <noscript> Please, turn your JavaScript on. </noscript>
+    </div>
+
+    <!-- main script block -->
+    <script async type="module">
+      import { main } from "./src/main.js";
+
+      main();
+    </script>
+  </body>
+</html>

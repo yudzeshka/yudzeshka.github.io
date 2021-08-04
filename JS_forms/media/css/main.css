@@ -1,0 +1,42 @@
+.tooltip-box {
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.info-box {
+  border: 1px solid #d6e9c6;
+  color: #3c763d;
+  background-color: #dff0d8;
+}
+
+.warning-box {
+  border: 1px solid #fdeda7;
+  color: #ff9900;
+  background-color: #fff3bc;
+}
+
+.error-box {
+  border: 1px solid #ff9890;
+  color: #af3434;
+  background-color: #f87070;
+}
+
+#template-store {
+  display: none;
+}
+
+.inputclass {
+  width: 400px;
+}
+
+.fieldset {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 30px;
+  border: none;
+}
+
+h1 {
+  text-align: center;
+}
